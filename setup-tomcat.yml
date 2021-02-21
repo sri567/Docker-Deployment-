@@ -1,8 +1,0 @@
----
-- name: This is to setup the tomcat
-  hosts: appservers
-  become: true
-  roles:
-    - java
-    - install_tomcat
-    - tomcat_start
