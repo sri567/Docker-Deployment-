@@ -3,7 +3,7 @@ pipeline{
  stages{
   stage('Copy-Artifact-upstream'){
     steps{
-      copyArtifacts filter: 'webapp/target/sample.war', fingerprintArtifacts: true, projectName: 'pipelinedemo', selector: lastWithArtifacts()
+      copyArtifacts filter: 'sample.war', fingerprintArtifacts: true, projectName: 'pipelinedemo', selector: lastWithArtifacts()
     }
   }
   stage('Deploy'){
