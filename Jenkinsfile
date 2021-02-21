@@ -1,14 +1,9 @@
 pipeline{
  agent any 
  stages{
-  stage('SCM'){
-    steps {
-      git 'https://github.com/thunikipatla/deployment_auto_scripts.git'
-    }
-  }
   stage('Copy-Artifact-upstream'){
     steps{
-      copyArtifacts filter: 'webapp/target/openmrs.war', fingerprintArtifacts: true, projectName: 'openmrs-build', selector: lastWithArtifacts()
+      copyArtifacts filter: 'webapp/target/sample.war', fingerprintArtifacts: true, projectName: 'pipelinedemo', selector: lastWithArtifacts()
     }
   }
   stage('Deploy'){
