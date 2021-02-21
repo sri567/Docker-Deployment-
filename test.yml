@@ -1,7 +1,0 @@
----
-- name: To test 
-  hosts: appservers
-  become: true
-  tasks:
-  - name: To test 
-    shell: echo "Hellow world"
