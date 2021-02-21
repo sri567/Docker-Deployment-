@@ -1,6 +1,6 @@
 ---
 - name: To deploy the app to application servers
-  hosts: [appservers]
+  hosts: appservers
   become: true
   roles: 
     - tomcat_stop
