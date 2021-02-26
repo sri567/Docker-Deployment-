@@ -1,8 +1,0 @@
----
-- name: To deploy the app to application servers
-  hosts: appservers
-  become: true
-  roles: 
-    - tomcat_stop
-    - deploy_war
-    - tomcat_start
