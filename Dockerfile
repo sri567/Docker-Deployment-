@@ -1,4 +1,4 @@
-FROM centops:latest
+FROM centos:latest
 MAINTAINER demo <demo@gmail.com>
 RUN sudo yum update -y
 ADD http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz /opt
