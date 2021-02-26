@@ -3,7 +3,7 @@ pipeline{
  stages{
   stage('Copy-Artifact-upstream'){
     steps{
-      copyArtifacts filter: 'target/demoart-1.3.jar', fingerprintArtifacts: true, projectName: 'pipelinedemo', selector: lastWithArtifacts()
+      copyArtifacts filter: 'target/demoart-*', fingerprintArtifacts: true, projectName: 'pipelinedemo', selector: lastWithArtifacts()
     }
   }
   stage('Build-docker-image'){
