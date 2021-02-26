@@ -8,7 +8,7 @@ pipeline{
   }
   stage('Build-docker-image'){
       steps{
-        sh ''' sudo docker build -t Samplewar:${BUILD_NUMBER} . '''
+        sh ''' docker build -t Samplewar:${BUILD_NUMBER} . '''
       }
  }
 }
