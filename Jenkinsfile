@@ -8,7 +8,7 @@ pipeline{
   }
   stage('Build-docker-image'){
       steps{
-        sh ''' docker build -t Samplewar:${BUILD_NUMBER} . '''
+        sh ''' docker build -t demoartwar:${BUILD_NUMBER} . '''
       }
  }
 }
