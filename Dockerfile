@@ -5,6 +5,6 @@ ADD http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5
 ADD apache-tomcat-8.5.51.tar.gz /opt/
 RUN mv /opt/apache-tomcat-8.5.51 /opt/tomcat
 EXPOSE 8090
-COPY /target/demoart-1.3.jar	 /opt/tomcat/webapps/
+COPY /target/demoart-*	 /opt/tomcat/webapps/
 
 CMD sh /opt/tomcat/bin/startup.sh && while true ; do sleep 1000; done
