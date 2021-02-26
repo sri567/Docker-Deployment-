@@ -1,6 +1,0 @@
----
-- name: To deploy the war file to app servers
-  copy: 
-    src: ./webapp/target/sample.war
-    dest: /opt/tomcat/webapps
-

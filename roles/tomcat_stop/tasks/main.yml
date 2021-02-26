@@ -1,5 +1,0 @@
----
-- name: To stop the tomcat
-  service: 
-    name: tomcat
-    state: stopped
